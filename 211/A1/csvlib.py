@@ -5,12 +5,6 @@
 
 
 import sys
-import pydoc
-
-#TODO:
-	#write function definitions:
-	#get pydoc working
-	#write test cases
 
 
 class csv:
@@ -26,7 +20,6 @@ class csv:
 		self.position = -1
 
 
-		#want to move this to a load data function
 		for row in self.file:
 			self.data.append(row.split(self.delimeter))
 
