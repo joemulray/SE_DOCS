@@ -1,17 +1,17 @@
 #!/usr/bin/env python
 """
 Joseph Mulray
-SE 211: ComputerParts
-Components of Computer
+SE 211: Computer Factory and Parts
 Gave each class of Computer Parts
 attributes such as name, model, cost
 for this case
+Includes both factories Advanced and Simple
 """
 
 
 
 class ComputerPartsFactory:
-	#Computer parts factory class
+	#Simple Computer parts factory class
 	def __init__(self):
 		self.monitor = Monitor()
 		self.keyboard = Keyboard()
@@ -48,7 +48,6 @@ class AdvancedComputerPartsFactory:
 
 class Monitor:
 	#Monitor class of a Computer component
-
 	def __init__(self, name = None, model = None, cost=0):
 		self.name = name
 		self.model = model
@@ -62,7 +61,6 @@ class Monitor:
 
 class Cpu:
 	#CPU class component
-
 	def __init__(self, name = None, processor = None, series = None, cost =0):
 		self.name = name
 		self.processor = processor
@@ -78,7 +76,6 @@ class Cpu:
 
 class Keyboard:
 	#Keyboad class component
-
 	def __init__(self, name = None, cost = 0):
 		self.name = name
 		self.cost = cost

@@ -2,9 +2,9 @@
 """
 Joseph Mulray
 SE211
-Parts Factory:
-Inlcludes Both Advanced and Computer
-Parts Factories
+Computer Class:
+Takes in Advanced or Simple
+Factory Objects
 """
 
 from pf import Monitor, Keyboard, Cpu, \
@@ -13,7 +13,6 @@ AdvancedComputerPartsFactory, ComputerPartsFactory
 
 class Computer:
 	#Computer class, initiated with computer parts factory
-
 	def __init__(self, factory = None):
 		self._factory = factory
 		self._monitor = factory.monitor
