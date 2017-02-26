@@ -1,0 +1,11 @@
+Joseph Mulray
+SE211
+2/24/17
+Assignment 2
+
+
+Inlcuded two python files for the Abstract Factory Design. First Class pf.py (parts factory), has both
+classes Advanced and Computer parts both in same file. cmptr.py includes the test cases along with the main computer class.
+Computer components, Monitor, Keyboard, and CPU class all found in the pf.py file. Also included a Makefile can just run make and should run test cases fine.
+
+
