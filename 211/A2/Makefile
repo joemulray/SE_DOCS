@@ -10,7 +10,7 @@ computer: cmptr.py
 	$(PYTHON) cmptr.py
 
 view: cmptr.py pf.py
-	$(VIEWER) cmpty.py
+	$(VIEWER) cmptr.py
 	$(VIEWER) pf.py
 
 clean:
