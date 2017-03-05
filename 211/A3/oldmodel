@@ -1,0 +1,83 @@
+#!/usr/bin/env python
+
+"""
+Joseph Mulray
+SE211
+Assignment 3:
+AlphaMobile Inc.
+"""
+
+
+class AlphaMobile:
+	def __init__(self, location = None):
+		self.location = location		
+		self.manfacturer = None
+	
+		if self.location is not None:
+			if self.location == "Singapore":
+				self.manufacturer = SingaporeFactory()
+			else:
+				self.manufacturer = NewYorkFactory()
+		else:
+			pass
+
+
+	def assemble(self, model):
+		print "assemble model"
+
+
+	def label(self, label):
+		print "label model"
+
+	
+	def setPrice(self, price):
+		print "set price"
+
+	
+	def __str__(self):
+		print "Manufacturer: %s" % self.manfacturer
+		
+
+
+
+class SingaporeFactory:
+	def __init__(self):
+		self.model1 = Model("Smart4", 200, "IPHONE7")
+		self.model2 = Model("Smart5", 400, "GALAXYS7")
+
+
+
+	def __str__(self):
+		print "Model %s" % self.model1.model
+		print "Price: %s" % self.model1.price
+		print "Label: %s" % self.model1.label		
+
+		print "Model: %s" % self.model2.model
+		print "Price: %s" % self.model2.price
+		print "Label: %s" % self.model2.label
+
+
+	
+
+class NewYorkFactory:
+	def __init__(self):
+		self.model1 = Model("Smart5", 400, "GALAXYS7")
+		self.model2 = Model("Smart6", 150, "LG G6")
+
+
+
+	def __str__(self):
+		print "Model %s" % self.model1.model
+		print "Price: %s" % self.model1.price
+		print "Label: %s" % self.model1.label		
+
+		print "Model: %s" % self.model2.model
+		print "Price: %s" % self.model2.price
+		print "Label: %s" % self.model2.label
+
+
+class Model:
+	def __init__(self, model = None, price = 0, label = None):
+		self.model = model
+		self.price = price
+		self.label = label

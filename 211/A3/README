@@ -1,0 +1,15 @@
+Joseph Mulray
+Assignment 3
+AlphaMobile Inc.
+
+Makefile:
+
+Run:
+make
+
+View Code:
+make view
+
+Clean:
+make clean
+
