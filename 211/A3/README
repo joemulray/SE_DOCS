@@ -2,6 +2,10 @@ Joseph Mulray
 Assignment 3
 AlphaMobile Inc.
 
+
+Included the UML Diagram for the project as AlphaMobileUML.png. Also I included a Makefile for running and viewing the classes.
+
+
 Makefile:
 
 Run:
@@ -9,7 +13,4 @@ make
 
 View Code:
 make view
-
-Clean:
-make clean
 

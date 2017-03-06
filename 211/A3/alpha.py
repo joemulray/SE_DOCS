@@ -13,7 +13,7 @@ from manufact import Manufacturer
 from model import Model
 
 class AlphaMobile:
-	def main(self):
+	def __init__(self):
 		
 		#Set the two manufacturing locations for AlphaMobile
 		NYFact = Manufacturer("New York")
@@ -40,28 +40,29 @@ class AlphaMobile:
 		#Assemble each of the models in the Specificied Factories
 		
 		#Assemble Smart4 and Smart 5 in New York	
-		NYFactSMART4 = NYFact.assemble(Smart4)
-		#Printing factory status
+		NYFact4 = NYFact.assemble(Smart4)
+		
+		#status of the New York Factory
 		print NYFact
 		
-		NYFactSMART5= NYFact.assemble(Smart5)
+		NYFact5= NYFact.assemble(Smart5)
 		print NYFact
 
 		#Assemble Smart 5 and Smart6 in Singapore
-		SPFactSMART5 = SPFact.assemble(Smart5)
+		SPFact5 = SPFact.assemble(Smart5)
+
+		#status of the Singapore Factory
 		print SPFact		
 
-		SPFactSMART6 = SPFact.assemble(Smart6)
+		SPFact6 = SPFact.assemble(Smart6)
 		print SPFact		
 
 		#Show the description for each of the Factory Models Made
-		NYFactSMART4.description()
-		NYFactSMART5.description()
-		SPFactSMART5.description()
-		SPFactSMART6.description()
+		NYFact4.description()
+		NYFact5.description()
+		SPFact5.description()
+		SPFact6.description()
 			
 
 if __name__ == '__main__':
-	AlphaMobile().main()
-
-
+	AlphaMobile()
