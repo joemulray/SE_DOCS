@@ -1,0 +1,7 @@
+Joseph Mulray
+SE211
+Assignment 4
+Weather Alert System
+
+
+Included Makefile to run application can run just make to compile application, and view to view code. Also the UML Diagram is A4.png. Main driver within the DecisionEngine, makes decision on messages to send based on "weather information" from a resource.
